@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%;  }
+body { margin: 0;  font-family: Roboto, "Helvetica Neue", sans-serif;}
+@font-face {
+  font-family: Lato;
+  src: url(assets/fonts/Lato-Regular.ttf) format('truetype');
+
+}
+@font-face {
+  font-family: Lato-bold;
+  src: url(assets/fonts/Lato-Bold.ttf) format('truetype');
+
+}
+  span, h1, h2, h3, h4, h5, mat-menu-item, mat-grid-list{font-family: Lato;}
+ .lato{font-family: Lato;}
+ app-dashboard{  margin: 0 !important;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+
+  justify-content: center;
+  top: 70px;
+  ;}
+  .gradient-screen {
+    margin:0;
+    padding:0;
+}
+

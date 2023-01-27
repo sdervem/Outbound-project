@@ -1,0 +1,106 @@
+mat-grid-tile {
+  background: lightblue;
+}
+h1, h2, h3, h4 , h5, li, p{font-family: Lato;}
+.lato-bold{font-family: Lato-bold;}
+li{line-height:35px;}
+.title-container{line-height:70px;}
+.card-header{background-color:#002642;  height: 50px;}
+.card-header-support{  height: 50px;}
+.card-header .whitefont{ color:#ffffff;}
+.btn-marine{--bs-btn-color:#fff  --bs-btn-bg:#002642;--bs-btn-border-color:#002642;--bs-btn-hover-color:#fff;--bs-btn-hover-bg:#33517c;--bs-btn-hover-border-color:#335c99;--bs-btn-focus-shadow-rgb:49,132,253;--bs-btn-active-color:#fff;--bs-btn-active-bg:#173158;--bs-btn-active-border-color:#1f4174;--bs-btn-active-shadow:inset 0 3px 5px rgba(0, 0, 0, 0.125);--bs-btn-disabled-color:#fff;--bs-btn-disabled-bg:#002642;--bs-btn-disabled-border-color:#0d6efd}
+
+.btn-default {
+  color: #333;
+  background-color: #002642;
+  border-color: #002642;
+}
+.btn-default:focus {
+  color: #333;
+  background-color: #002642;
+  border-color: #002642;
+}
+.btn-default:hover {
+  color: #333;
+  background-color: #394e5c;
+  border-color: #221366;
+}
+.btn-default:active {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.font-button-marine{color: white;}
+.main-title-text{font-size: 2.875em!important ;  }
+
+
+
+/* SWITCH STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.switch-wrapper {
+  position: relative;
+  display: inline-flex;
+  padding: 4px;
+  border: 1px solid lightgrey;
+  margin-bottom: 40px;
+  border-radius: 30px;
+  background: var(--white);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.switch-wrapper [type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.switch-wrapper [type="radio"]:checked#monthly ~ label[for="monthly"],
+.switch-wrapper [type="radio"]:checked#yearly ~ label[for="yearly"] {
+  color: var(--white);
+}
+
+.switch-wrapper [type="radio"]:checked#monthly ~ label[for="monthly"]:hover,
+.switch-wrapper [type="radio"]:checked#yearly ~ label[for="yearly"]:hover {
+  background: transparent;
+}
+
+.switch-wrapper
+  [type="radio"]:checked#monthly
+  + label[for="yearly"]
+  ~ .highlighter {
+  transform: none;
+}
+
+.switch-wrapper
+  [type="radio"]:checked#yearly
+  + label[for="monthly"]
+  ~ .highlighter {
+  transform: translateX(100%);
+}
+
+.switch-wrapper label {
+  font-size: 16px;
+  z-index: 1;
+  min-width: 100px;
+  line-height: 32px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: color 0.25s ease-in-out;
+}
+
+.switch-wrapper label:hover {
+  background: var(--lightgray);
+}
+
+.switch-wrapper .highlighter {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(50% - 4px);
+  height: calc(100% - 8px);
+  border-radius: 30px;
+  background:  #002642;
+  transition: transform 0.25s ease-in-out;
+}
+
